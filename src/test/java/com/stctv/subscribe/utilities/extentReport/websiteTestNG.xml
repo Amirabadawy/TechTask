@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="STC Website">
+    <listeners>
+        <listener class-name="com.stctv.subscribe.utilities.listeners.TestNGListener"/>
+    </listeners>
+
+    <test name="Website-Report">
+        <classes>
+            <class name="com.stctv.subscribe.utilities.extentReport.ExtentReport"/>
+            <class name="com.stctv.subscribe.tests.kuwaitPlans.KuwaitTestRunner"/>
+        </classes>
+    </test>
+</suite>
